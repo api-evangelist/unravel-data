@@ -1,9 +1,29 @@
 aid: unravel-data
 name: Unravel Data
-description: 'Unravel Data is a company surfaced as a portfolio company of ggv-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: data. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Unravel Data is an AI-powered data observability and FinOps platform for
+  modern data stacks - Databricks, Snowflake, Google BigQuery, and Cloudera.
+  Its Arvix engine ingests metadata and telemetry (never customer data),
+  identifies cost and performance inefficiencies, and applies validated
+  optimizations either automatically (AutoApply) or with human-in-the-loop
+  approval. A REST API exposes cost data, efficiency scores, optimization
+  queues, and action history (reference docs are gated behind the customer
+  portal), with native CI/CD plugins for GitHub Actions and Jenkins. Unravel
+  is SOC 2 Type II certified and backed by investors including GGV Capital.
 url: https://raw.githubusercontent.com/api-evangelist/unravel-data/refs/heads/main/apis.yml
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/69c4c9c7f795b263782ef5be/69c754b2bfc0db573c3c6e36_9869e478efb1fecc6dafa9f6cb79fb13_global-og-image.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +32,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Data
+- Data Observability
+- FinOps
+- DataOps
+- Cost Optimization
+- Databricks
+- Snowflake
+- BigQuery
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,44 @@ maintainers:
 common:
 - type: Website
   url: https://www.unraveldata.com/
+- type: Documentation
+  url: https://docs.unraveldata.com/
+- type: Support
+  url: https://www.unraveldata.com/company/contact-us
+- type: Blog
+  url: https://www.unraveldata.com/resources
+- type: Pricing
+  url: https://www.unraveldata.com/platform/pricing-options
+- type: Plans
+  url: plans/unravel-data-plans.yml
+- type: TermsOfService
+  url: https://www.unraveldata.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.unraveldata.com/privacy-policy
+- type: Login
+  url: https://customers.unraveldata.com/login
+- type: GitHubOrganization
+  url: https://github.com/UnravelData
+- type: LinkedIn
+  url: https://www.linkedin.com/company/unravel-data
+- type: YouTube
+  url: https://www.youtube.com/c/UnravelData
+- type: LLMsTxt
+  url: llms/unravel-data-llms.txt
+- type: TrustCenter
+  url: security/unravel-data-trust-center.yml
+- type: Compliance
+  url: https://trust.unraveldata.com/
+- type: DomainSecurity
+  url: security/unravel-data-domain-security.yml
+- type: Conformance
+  url: conformance/unravel-data-conformance.yml
+- type: Lifecycle
+  url: lifecycle/unravel-data-lifecycle.yml
+- type: ChangeLog
+  url: changelog/unravel-data-changelog.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

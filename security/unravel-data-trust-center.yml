@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://trust.unraveldata.com/
+url: https://trust.unraveldata.com/
+platform: Conveyor
+certifications:
+- SOC 2 Type 2
+notes: >-
+  Unravel Data's own certification published on the trust center is SOC 2 Type II
+  (stated for the Databricks, Snowflake, and BigQuery platform offerings). The
+  automated probe also matched ISO 27001/27017/27018, HIPAA, FedRAMP, and GDPR
+  keywords, but those appear in the embedded Conveyor JSON as the certifications
+  of Unravel's listed subprocessors (AWS, Google Cloud, Microsoft Azure,
+  Snowflake) and platform vocabulary - they are NOT Unravel certifications and
+  were removed from this record. Trust center also states annual third-party
+  audits, annual third-party penetration testing, disaster recovery plan,
+  subprocessors list, cyber insurance, and customer-data deletion on request.
+subprocessors:
+- name: AWS
+  website: https://aws.amazon.com
+- name: Google Cloud
+  website: https://cloud.google.com/
+- name: Microsoft Azure
+  website: https://azure.microsoft.com/en-us/
+- name: Snowflake
+  website: https://snowflake.com
+- name: Databricks
+  website: https://databricks.com
+evidence:
+- source: https://trust.unraveldata.com/
+  keywords:
+  - soc 2 type 2
+  - trust center
+  - annual third-party penetration testing
+  - subprocessors list available

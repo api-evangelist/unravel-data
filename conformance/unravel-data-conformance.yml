@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.unraveldata.com/ (Docs & FAQ) + https://trust.unraveldata.com/
+standards:
+- id: soc2-type-2
+  conforms: true
+  evidence: >-
+    Docs FAQ states "Unravel is SOC 2 Type II certified"; trust center
+    (trust.unraveldata.com, Conveyor) lists SOC 2 Type 2 for the Databricks,
+    Snowflake, and BigQuery platform offerings.
+- id: saml2-sso
+  conforms: true
+  evidence: >-
+    Docs FAQ: "Unravel supports SAML 2.0 for SSO. Tested integrations include
+    Okta, Azure Active Directory, and Ping Identity."
+- id: scim
+  conforms: true
+  evidence: >-
+    Docs FAQ: "SCIM provisioning for automated user management is also
+    supported on Enterprise plans."
+- id: tls-1-3
+  conforms: true
+  evidence: >-
+    Docs FAQ: "All data in transit between Unravel and your data platforms uses
+    TLS 1.3"; confirmed by live TLS probe of www.unraveldata.com (TLSv1.3).
+- id: hipaa
+  conforms: false
+  evidence: >-
+    Docs FAQ says Unravel "supports HIPAA-eligible deployments" - deployment
+    support, not a published HIPAA certification of Unravel itself.
+- id: oauth2
+  conforms: false
+  evidence: >-
+    Unravel consumes OAuth M2M / SPN when connecting to Databricks, but
+    publishes no OAuth-secured public API of its own; REST API docs are gated
+    behind the customer portal.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API reference or OpenAPI available to verify error format.
+notes: >-
+  Unravel exposes a REST API (cost data, efficiency scores, optimization
+  queues, action history) but its API reference is only available in the
+  customer portal after onboarding, so API-level standards conformance cannot
+  be verified from public surfaces.

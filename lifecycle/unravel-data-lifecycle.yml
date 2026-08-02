@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.unraveldata.com/ + https://www.unraveldata.com/ + live probes
+versioning:
+  scheme: product-release
+  notes: >-
+    Unravel ships as a SaaS-hosted control plane with continuous releases; the
+    self-managed (Cloudera on-premises) product carries 4.x release numbering
+    (latest publicly announced releases: 4.8.1, 4.7.8.0). No public API
+    versioning policy is documented - the REST API reference is gated behind
+    the customer portal.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No public deprecation policy or RFC 8594 Sunset-header support documented.
+sla:
+  url: null
+  notes: >-
+    Docs FAQ references SLA tracking for customer workloads (a product
+    feature), but Unravel publishes no public SLA for its own service.
+status_page: null
+status_page_probe:
+  - url: https://status.unraveldata.com/
+    result: connection-failed (no such host)
+support:
+  contact: solutions@unraveldata.com
+  portal: https://customers.unraveldata.com/login
+deprecated_operations: []
+notes: >-
+  No public status page, deprecation policy, or SLA found, so no StatusPage or
+  Deprecation pointers are wired in apis.yml.

@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of https://www.unraveldata.com and https://docs.unraveldata.com
+hosts:
+- host: https://www.unraveldata.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 200
+    file: ../llms/unravel-data-llms.txt
+- host: https://docs.unraveldata.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+notes: >-
+  No /.well-known/ discovery documents are published on either host. The only
+  discovery-surface hit is a real llms.txt at https://www.unraveldata.com/llms.txt
+  (saved verbatim in llms/). No WellKnown pointer is wired in apis.yml because no
+  /.well-known/ document actually exists.
